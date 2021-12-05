@@ -99,7 +99,7 @@ var cnItems = {
     "Continuous": "连续",
     "D-Pad": "方向键",
     "Up": "上",
-    "": "",
+    "Starting Power": "初始力量",
     "": "",
     "": "",
     "": "",
@@ -305,6 +305,7 @@ var cnExcludePostfix = [
 var cnRegReplace = new Map([
     [/^You are gaining (.+) elves per second$/, '你每秒获得 $1 精灵'],
     [/^You have (.+) points$/, '你有 $1 点数'],
+    [/^Increase your Power at the start of each level by (.+).$/, '在每个级别开始时将你的力量提高 $1。'],
     [/^Increase Fame gain by (.+), additively.$/, '将声望增益增加 $1，附加。'],
     [/^Increase Fame gain by (.+), compounding.$/, '将声望增益增加 $1，复合。'],
     [/^Next at (.+) points$/, '下一个在 $1 点数'],
