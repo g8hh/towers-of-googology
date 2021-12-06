@@ -107,7 +107,7 @@ var cnItems = {
     "Loot Multiplier": "战利品乘数",
     "Safepoints": "安全点",
     "You start at the start of the tower instead of the level when died.": "您从塔的起点而不是死亡时的级别开始。",
-    "": "",
+    "Completed!": "已完成!",
     "": "",
     "": "",
     "": "",
