@@ -93,22 +93,22 @@ function exportSave() {
 }
 
 function showResetPopup() {
-    if (confirm("Do you want to reset the game? This can not be undone!")) {
+    if (confirm("你想重置游戏吗？ 这不能被撤消！")) {
         localStorage.removeItem("tower");
         location.reload();
     }
 }
 function showImportPopup() {
-    let data = prompt("Please enter save string:");
+    let data = prompt("请输入存档字符串:");
     if (!data) return;
     try {
         let sGame = deepCopy(JSON.parse(atob(data)), getStartGame());
-        let msg = "Do you want to import this save? This will override your current save!\n\n" +
-            "Save Preview - This save has:\n" + format(sGame.points, 0) + " Fame";
-        if (sGame.lootTotal.gt(0)) msg += "\n" + format(sGame.loot, 0) + " Loot";
-        if (sGame.bricksTotal.gt(0)) msg += "\n" + format(sGame.bricks, 0) + " Bricks";
-        if (sGame.manaTotal.gt(0)) msg += "\n" + format(sGame.mana, 0) + " Mana";
-        if (sGame.karmaTotal.gt(0)) msg += "\n" + format(sGame.karma, 0) + " Karma";
+        let msg = "您要导入此存档吗？ 这将覆盖您当前的游戏进度！\n\n" +
+            "存档概览 - 此存档包含:\n" + format(sGame.points, 0) + " 声望";
+        if (sGame.lootTotal.gt(0)) msg += "\n" + format(sGame.loot, 0) + " 战利品";
+        if (sGame.bricksTotal.gt(0)) msg += "\n" + format(sGame.bricks, 0) + " 砖块";
+        if (sGame.manaTotal.gt(0)) msg += "\n" + format(sGame.mana, 0) + " 法力";
+        if (sGame.karmaTotal.gt(0)) msg += "\n" + format(sGame.karma, 0) + " 业力";
         if (!confirm(msg)) return;
         localStorage.setItem("tower", btoa(JSON.stringify(sGame)));
         location.reload();

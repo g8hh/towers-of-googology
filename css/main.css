@@ -151,7 +151,7 @@ a:active {
 #lootbox::before {
     position: absolute;
     left: 5px;
-    content: "Loot";
+    content: "战利品";
 }
 
 #brickbox {
@@ -161,7 +161,7 @@ a:active {
 #brickbox::before {
     position: absolute;
     left: 5px;
-    content: "Bricks";
+    content: "砖块";
 }
 
 #manabox {
@@ -171,7 +171,7 @@ a:active {
 #manabox::before {
     position: absolute;
     left: 5px;
-    content: "Mana";
+    content: "法力";
 }
 
 #karmabox {
@@ -181,7 +181,7 @@ a:active {
 #karmabox::before {
     position: absolute;
     left: 5px;
-    content: "Karma";
+    content: "业力";
 }
 
 #elemitebox {
@@ -193,7 +193,7 @@ a:active {
 #elemitebox::before {
     position: absolute;
     left: 5px;
-    content: "Elemite";
+    content: "元素";
 }
 
 @-webkit-keyframes rainbow {
